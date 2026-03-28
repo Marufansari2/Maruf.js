@@ -2,7 +2,7 @@
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
-const score = 100
+/*const score = 100
 const scoreValue = 100.3
 
 const isLoggedIn = false
@@ -32,6 +32,26 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+console.log(typeof anotherId);  */
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//stack(primitive) and heap memory(Non-primitive) in js
+
+let myName = "Maruf"
+let anotherName = myName
+anotherName="Ansari"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "maruf@example.com",
+    age: 22
+}
+let userTwo = userOne
+userTwo.email = "ansari@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
